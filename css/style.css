@@ -5,26 +5,17 @@
   text-decoration: none;
   list-style: none;
 }
+
 body {
   font-family: "Montserrat", sans-serif;
   font-family: "Roboto Mono", monospace;
   padding: auto;
 }
-header {
-  background-color: black;
-  color: #fff;
-  padding: 10px;
-  text-align: center;
-}
+
 main {
   background-color: azure;
 }
-footer {
-  background-color: black;
-  color: #fff;
-  text-align: center;
-  font-size: larger;
-}
+
 p {
   padding-right: 20px;
   padding-left: 20px;
@@ -34,76 +25,176 @@ p {
   text-align: center;
 }
 
-h2 {
-  text-align: center;
-}
-
+h2,
 h3 {
   text-align: center;
 }
 
-/*#navMenu {
+.home-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+}
+
+.homeImg {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+.clearfix {
+  display: inline-block;
+  align-content: center;
+}
+.clearfix:after {
+  display: table;
+  clear: both;
+}
+
+.upMenu {
+  align-content: center;
+  text-align: center;
+}
+
+.aboutUs {
+  text-align: center;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-gap: 20px;
+  padding: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.iframe-container {
+  background-color: #f1f1f1;
+  margin: 10px;
+  padding: 20px;
+  text-align: center;
+  overflow: hidden;
+}
+
+#grid-delivery {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 100%;
+  grid-gap: 20px;
+  padding: 20px;
+  grid-template-areas: "section1 section2" "aside section2";
+  text-align: center;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 500px;
+  border: 0;
+}
+
+aside {
+  text-align: center;
+}
+
+@media (max-width: 576px) {
+  #grid-delivery {
+    grid-template-columns: 100%;
+    grid-template-areas: "section1" "section2" "aside";
+  }
+}
+@media (min-width: 577px) and (max-width: 768px) {
+  #grid-delivery {
+    grid-template-columns: 100%;
+    grid-template-areas: "section1" "section2" "aside";
+  }
+}
+@media (min-width: 769px) and (max-width: 992px) {
+  #grid-delivery {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "section1 section2" "aside section2";
+  }
+}
+@media (min-width: 993px) and (max-width: 1199px) {
+  #grid-delivery {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "section1 section2" "aside section2";
+  }
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
+  #grid-delivery {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "section1 section2" "aside section2";
+  }
+}
+@media (min-width: 1400px) {
+  #grid-delivery {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "section1 section2" "aside section2";
+  }
+}
+.branch-list {
   list-style: none;
-  margin: 0;
   padding: 0;
 }
-
-#navMenu li {
-  display: inline;
-  margin-right: 20px;
-  float: left;
+.branch-list li {
+  margin-bottom: 20px;
 }
 
-#navMenu a {
-  text-decoration: none;
+header {
+  background-color: black;
   color: #fff;
-  font-weight: bold;
-}
-nav ul {
-  padding: 0;
-  list-style: none;
+  padding: 10px;
+  text-align: center;
+  color: red;
 }
 
-nav ul li {
-  display: inline;
-  margin-right: 20px;
+.link {
+  position: absolute;
+  padding: 20px 50px;
 }
-
-nav ul li a {
-  text-decoration: none;
-  color: #fff;
-}*/
 
 nav {
   background: black;
   height: 80px;
   width: 100%;
 }
-.link {
-  position: absolute;
-  padding: 20px 50px;
-}
 nav ul {
   float: center;
   margin-right: 20px;
 }
-nav ul li {
+nav li {
   display: inline-block;
   line-height: 80px;
   margin: 0 5px;
 }
-nav ul li a {
+nav a {
   color: #fff;
   font-size: 18px;
   padding: 7px 13px;
   border-radius: 3px;
   text-transform: uppercase;
 }
-li a.active,
-li a:hover {
+nav a.active, nav a:hover {
   background: gainsboro;
   transition: 0.5s;
 }
+
+footer {
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  font-size: larger;
+}
+
 .checkbtn {
   font-size: 30px;
   color: #fff;
@@ -113,6 +204,7 @@ li a:hover {
   cursor: pointer;
   display: none;
 }
+
 #check {
   display: none;
 }
@@ -125,7 +217,6 @@ li a:hover {
     font-size: 16px;
   }
 }
-
 @media (max-width: 858px) {
   .checkbtn {
     display: block;
@@ -148,8 +239,7 @@ li a:hover {
   nav ul li a {
     font-size: 20px;
   }
-  li a:hover,
-  li a.active {
+  li a:hover, li a.active {
     background: none;
     color: #fff;
   }
@@ -157,41 +247,28 @@ li a:hover {
     left: 0;
   }
 }
-
-.home-image {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: fit-content;
-}
-.homeImg {
-  width: 100%;
-  height: auto;
-  display: block;
-  margin: 0 auto;
-  max-width: 100%;
-}
-
-.clearfix:after {
-  display: table;
-  clear: both;
-}
-
-.clearfix {
-  display: inline-block;
-  align-content: center;
-}
-.upMenu {
-  align-content: center;
+.whatsapp {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #25d366;
+  color: #fff;
+  border-radius: 50px;
   text-align: center;
+  font-size: 30px;
+  z-index: 100;
 }
-.aboutUs {
-  text-align: center;
+
+.whatsapp-icon {
+  margin-top: 13px;
 }
 
 .burger-container {
   align-items: center;
 }
+
 .burgerMenu {
   margin: 0px auto;
   padding: auto;
@@ -204,6 +281,7 @@ li a:hover {
   align-items: center;
   border-radius: 10px;
 }
+
 .beerMenu {
   margin: 0px auto;
   padding: auto;
@@ -215,6 +293,7 @@ li a:hover {
   height: 200px;
   border-radius: 10px;
 }
+
 .shareMenu {
   margin: 0px auto;
   padding: auto;
@@ -225,9 +304,9 @@ li a:hover {
   display: inline-block;
   width: 150px;
   height: 150px;
-
   border-radius: 10px;
 }
+
 .cardsMenu {
   background-color: gainsboro;
   margin: 10px 10px 10px 10px;
@@ -244,24 +323,22 @@ li a:hover {
   justify-content: center;
   overflow: hidden;
 }
+
 @media (max-width: 768px) {
   .cardsMenu {
     width: 100%;
   }
 }
-
 @media (min-width: 769px) and (max-width: 1200px) {
   .cardsMenu {
     width: 48%;
   }
 }
-
 @media (min-width: 1201px) {
   .cardsMenu {
     width: 30%;
   }
 }
-
 .card:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
@@ -286,7 +363,43 @@ li a:hover {
   margin-left: auto;
   margin-right: auto;
   padding: 1.5em;
+}
+.content .content {
+  background-color: gainsboro;
+  font-weight: lighter;
+  font-stretch: normal;
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1.5em;
   align-items: center;
+}
+.content .contactWrapper {
+  box-shadow: 0 0 20px 0 whitesmoke;
+}
+.content .contactForm {
+  background-color: black;
+}
+.content .contactForm form p {
+  margin: 0;
+  padding: 1em;
+}
+.content .contactForm form button,
+.content .contactForm form input,
+.content .contactForm form textarea {
+  width: 100%;
+  padding: 0.7em;
+  border: none;
+  outline: 0;
+}
+.content .contactForm form button {
+  background-color: azure;
+  border: 0;
+  text-transform: uppercase;
+  padding: 1em;
+}
+.content .contactInfo {
+  background-color: black;
 }
 
 .contactWrapper {
@@ -322,126 +435,4 @@ li a:hover {
   background-color: black;
 }
 
-.whatsapp {
-  position: fixed;
-  width: 60px;
-  height: 60px;
-  bottom: 40px;
-  right: 40px;
-  background-color: #25d366;
-  color: #fff;
-  border-radius: 50px;
-  text-align: center;
-  font-size: 30px;
-  z-index: 100;
-}
-
-.whatsapp-icon {
-  margin-top: 13px;
-}
-
-.grid-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr;
-  grid-gap: 20px;
-  padding: 20px;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-}
-
-.iframe-container {
-  background-color: #f1f1f1;
-  margin: 10px;
-  padding: 20px;
-  text-align: center;
-  overflow: hidden;
-}
-
-#grid-delivery {
-  display: grid;
-  grid-template-columns: 50% 50%;
-  grid-template-rows: 100%;
-  grid-gap: 20px;
-  padding: 20px;
-  grid-template-areas:
-    "section1 section2"
-    "aside section2";
-  text-align: center;
-}
-.image-container img {
-  width: 100%;
-  height: auto;
-}
-
-.map-container iframe {
-  width: 100%;
-  height: 500px;
-  border: 0;
-}
-aside {
-  text-align: center;
-}
-@media (max-width: 576px) {
-  #grid-delivery {
-    grid-template-columns: 100%;
-    grid-template-areas:
-      "section1"
-      "section2"
-      "aside";
-  }
-}
-
-@media (min-width: 577px) and (max-width: 768px) {
-  #grid-delivery {
-    grid-template-columns: 100%;
-    grid-template-areas:
-      "section1"
-      "section2"
-      "aside";
-  }
-}
-
-@media (min-width: 769px) and (max-width: 992px) {
-  #grid-delivery {
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas:
-      "section1 section2"
-      "aside section2";
-  }
-}
-
-@media (min-width: 993px) and (max-width: 1199px) {
-  #grid-delivery {
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas:
-      "section1 section2"
-      "aside section2";
-  }
-}
-
-@media (min-width: 1200px) and (max-width: 1399px) {
-  #grid-delivery {
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas:
-      "section1 section2"
-      "aside section2";
-  }
-}
-
-@media (min-width: 1400px) {
-  #grid-delivery {
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas:
-      "section1 section2"
-      "aside section2";
-  }
-}
-
-.branch-list {
-  list-style: none;
-  padding: 0;
-}
-
-.branch-list li {
-  margin-bottom: 20px;
-}
+/*# sourceMappingURL=style.css.map */

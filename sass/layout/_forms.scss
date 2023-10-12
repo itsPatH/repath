@@ -1,0 +1,87 @@
+.content {
+  background-color: gainsboro;
+  font-weight: lighter;
+  font-stretch: normal;
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1.5em;
+  .content {
+    background-color: gainsboro;
+    font-weight: lighter;
+    font-stretch: normal;
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5em;
+    align-items: center;
+  }
+
+  .contactWrapper {
+    box-shadow: 0 0 20px 0 whitesmoke;
+  }
+
+  .contactForm {
+    background-color: black;
+
+    form {
+      p {
+        margin: 0;
+        padding: 1em;
+      }
+
+      button,
+      input,
+      textarea {
+        width: 100%;
+        padding: 0.7em;
+        border: none;
+        outline: 0;
+      }
+
+      button {
+        background-color: azure;
+        border: 0;
+        text-transform: uppercase;
+        padding: 1em;
+      }
+    }
+  }
+
+  .contactInfo {
+    background-color: black;
+  }
+}
+
+.contactWrapper {
+  box-shadow: 0 0 20px 0 whitesmoke;
+}
+
+.contactForm {
+  background-color: black;
+}
+
+.contactForm form p {
+  margin: 0;
+  padding: 1em;
+}
+
+.contactForm form button,
+.contactForm form input,
+.contactForm form textarea {
+  width: 100%;
+  padding: 0.7em;
+  border: none;
+  outline: 0;
+}
+
+.contactForm form button {
+  background-color: azure;
+  border: 0;
+  text-transform: uppercase;
+  padding: 1em;
+}
+
+.contactInfo {
+  background-color: black;
+}

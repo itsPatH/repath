@@ -1,0 +1,36 @@
+header {
+  background-color: black;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+.link {
+  position: absolute;
+  padding: 20px 50px;
+}
+nav {
+  background: black;
+  height: 80px;
+  width: 100%;
+  ul {
+    float: center;
+    margin-right: 20px;
+  }
+  li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+  }
+  a {
+    color: #fff;
+    font-size: 18px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    &.active,
+    &:hover {
+      background: gainsboro;
+      transition: 0.5s;
+    }
+  }
+}
