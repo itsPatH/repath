@@ -1,7 +1,8 @@
+$background-color_1: gainsboro;
+
 .burger-container {
   align-items: center;
 }
-
 .burgerMenu {
   margin: 0px auto;
   padding: auto;
@@ -9,12 +10,10 @@
   align-items: center;
   align-content: center;
   justify-content: center;
+  border-radius: 10px;
   width: 150px;
   height: 200px;
-  align-items: center;
-  border-radius: 10px;
 }
-
 .beerMenu {
   margin: 0px auto;
   padding: auto;
@@ -22,11 +21,10 @@
   align-items: center;
   align-content: center;
   justify-content: center;
+  border-radius: 10px;
   width: 170px;
   height: 200px;
-  border-radius: 10px;
 }
-
 .shareMenu {
   margin: 0px auto;
   padding: auto;
@@ -35,13 +33,12 @@
   align-content: center;
   justify-content: center;
   display: inline-block;
+  border-radius: 10px;
   width: 150px;
   height: 150px;
-  border-radius: 10px;
 }
-
 .cardsMenu {
-  background-color: gainsboro;
+  background-color: $background-color_1;
   margin: 10px 10px 10px 10px;
   padding: 10px 10px 10px 10px;
   height: 300px;
@@ -56,37 +53,33 @@
   justify-content: center;
   overflow: hidden;
 }
-
-@media (max-width: 768px) {
-  .cardsMenu {
-    width: 100%;
+.card {
+  &:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
   }
 }
-
-@media (min-width: 769px) and (max-width: 1200px) {
-  .cardsMenu {
-    width: 48%;
-  }
-}
-
-@media (min-width: 1201px) {
-  .cardsMenu {
-    width: 30%;
-  }
-}
-
-.card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-}
-
 .container {
   padding: 2px 16px;
   align-content: center;
 }
-
 .menu-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+}
+@media (max-width: 768px) {
+  .cardsMenu {
+    width: 100%;
+  }
+}
+@media (min-width: 769px) and (max-width: 1200px) {
+  .cardsMenu {
+    width: 48%;
+  }
+}
+@media (min-width: 1201px) {
+  .cardsMenu {
+    width: 30%;
+  }
 }

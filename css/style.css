@@ -275,10 +275,9 @@ footer {
   align-items: center;
   align-content: center;
   justify-content: center;
+  border-radius: 10px;
   width: 150px;
   height: 200px;
-  align-items: center;
-  border-radius: 10px;
 }
 
 .beerMenu {
@@ -288,9 +287,9 @@ footer {
   align-items: center;
   align-content: center;
   justify-content: center;
+  border-radius: 10px;
   width: 170px;
   height: 200px;
-  border-radius: 10px;
 }
 
 .shareMenu {
@@ -301,9 +300,9 @@ footer {
   align-content: center;
   justify-content: center;
   display: inline-block;
+  border-radius: 10px;
   width: 150px;
   height: 150px;
-  border-radius: 10px;
 }
 
 .cardsMenu {
@@ -323,21 +322,6 @@ footer {
   overflow: hidden;
 }
 
-@media (max-width: 768px) {
-  .cardsMenu {
-    width: 100%;
-  }
-}
-@media (min-width: 769px) and (max-width: 1200px) {
-  .cardsMenu {
-    width: 48%;
-  }
-}
-@media (min-width: 1201px) {
-  .cardsMenu {
-    width: 30%;
-  }
-}
 .card:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
@@ -354,6 +338,21 @@ footer {
   align-items: center;
 }
 
+@media (max-width: 768px) {
+  .cardsMenu {
+    width: 100%;
+  }
+}
+@media (min-width: 769px) and (max-width: 1200px) {
+  .cardsMenu {
+    width: 48%;
+  }
+}
+@media (min-width: 1201px) {
+  .cardsMenu {
+    width: 30%;
+  }
+}
 .content {
   background-color: gainsboro;
   font-weight: lighter;
