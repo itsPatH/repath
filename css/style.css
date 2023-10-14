@@ -29,6 +29,7 @@ h2,
 h3 {
   text-align: center;
   font-family: "Roboto Mono", monospace;
+  padding: 10px 10px 10px 10px;
 }
 
 .home-image {
@@ -398,7 +399,6 @@ footer {
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 20px;
 }
 
 .flip-card-front {
