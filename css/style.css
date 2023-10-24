@@ -190,6 +190,10 @@ nav a.active, nav a:hover {
   transition: 0.5s;
 }
 
+.mug:visited {
+  color: white;
+}
+
 footer {
   background-color: black;
   color: #fff;
@@ -420,42 +424,36 @@ footer {
   margin-left: auto;
   margin-right: auto;
   padding: 1.5em;
-}
-.content .content {
-  background-color: gainsboro;
-  font-weight: lighter;
-  font-stretch: normal;
-  max-width: 1170px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 1.5em;
   align-items: center;
 }
-.content .contactWrapper {
+
+.contactWrapper {
   box-shadow: 0 0 20px 0 whitesmoke;
 }
-.content .contactForm {
+
+.contactForm {
   background-color: black;
 }
-.content .contactForm form p {
+.contactForm form p {
   margin: 0;
   padding: 1em;
 }
-.content .contactForm form button,
-.content .contactForm form input,
-.content .contactForm form textarea {
+.contactForm form button,
+.contactForm form input,
+.contactForm form textarea {
   width: 100%;
   padding: 0.7em;
   border: none;
   outline: 0;
 }
-.content .contactForm form button {
+.contactForm form button {
   background-color: azure;
   border: 0;
   text-transform: uppercase;
   padding: 1em;
 }
-.content .contactInfo {
+
+.contactInfo {
   background-color: black;
 }
 

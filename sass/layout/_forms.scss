@@ -6,15 +6,7 @@
   margin-left: auto;
   margin-right: auto;
   padding: 1.5em;
-  .content {
-    background-color: gainsboro;
-    font-weight: lighter;
-    font-stretch: normal;
-    max-width: 1170px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 1.5em;
-    align-items: center;
+  align-items: center;
   }
 
   .contactWrapper {
@@ -51,7 +43,6 @@
   .contactInfo {
     background-color: black;
   }
-}
 
 .contactWrapper {
   box-shadow: 0 0 20px 0 whitesmoke;
