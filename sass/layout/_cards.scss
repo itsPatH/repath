@@ -5,7 +5,7 @@ $background-color_1: gainsboro;
 }
 .burgerMenu {
   margin: 0px auto;
-  padding: auto;
+  padding: 10px;
   display: flex;
   align-items: center;
   align-content: center;
@@ -16,7 +16,7 @@ $background-color_1: gainsboro;
 }
 .beerMenu {
   margin: 0px auto;
-  padding: auto;
+  padding: 10px;
   display: flex;
   align-items: center;
   align-content: center;
@@ -27,15 +27,15 @@ $background-color_1: gainsboro;
 }
 .shareMenu {
   margin: 0px auto;
-  padding: auto;
+  padding: 10px;
   display: flex;
   align-items: center;
   align-content: center;
   justify-content: center;
   display: inline-block;
   border-radius: 10px;
-  width: 150px;
-  height: 150px;
+  width: 130px;
+  height: 200px;
 }
 .cardsMenu {
   background-color: $background-color_1;

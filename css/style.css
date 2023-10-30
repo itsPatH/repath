@@ -293,7 +293,7 @@ footer {
 
 .burgerMenu {
   margin: 0px auto;
-  padding: auto;
+  padding: 10px;
   display: flex;
   align-items: center;
   align-content: center;
@@ -305,7 +305,7 @@ footer {
 
 .beerMenu {
   margin: 0px auto;
-  padding: auto;
+  padding: 10px;
   display: flex;
   align-items: center;
   align-content: center;
@@ -317,15 +317,15 @@ footer {
 
 .shareMenu {
   margin: 0px auto;
-  padding: auto;
+  padding: 10px;
   display: flex;
   align-items: center;
   align-content: center;
   justify-content: center;
   display: inline-block;
   border-radius: 10px;
-  width: 150px;
-  height: 150px;
+  width: 130px;
+  height: 200px;
 }
 
 .cardsMenu {
